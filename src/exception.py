@@ -1,5 +1,5 @@
 import sys
-import logging
+from src.logger import logging
 
 def error_message_details(error,error_detail:sys):
     _,_,exc_tb = error_detail.exc_info() #exc info gives 3 values we need only the 3rd one so we are capturing the other 2 in dummy variable
